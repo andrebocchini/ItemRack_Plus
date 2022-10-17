@@ -1,0 +1,7 @@
+## Interface: 30400
+## Title: ItemRack_Plus
+## Author: MrPlasticJesus
+## Dependencies: ItemRack
+## Version: 1.0.0
+
+ItemRack_Plus.xml

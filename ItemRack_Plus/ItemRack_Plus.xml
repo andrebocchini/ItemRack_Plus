@@ -1,0 +1,33 @@
+<Ui>
+	<Frame name="ItemRack_Plus_Frame" hidden="false" parent="PaperDollFrame" setAllPoints="true">
+		<Frames>
+			<Button name="ItemRack_Plus_Button" hidden="false">
+				<Size>
+					<AbsDimension x="64" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-28" y="-42"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+					</OnLoad>
+					<OnClick>
+						ItemRack.MinimapOnClick(self, button)
+					</OnClick>
+				</Scripts>
+				<NormalTexture file="Interface\Addons\ItemRack_Plus\Textures\Button">
+					<TexCoords left="0" right="1" top="0" bottom="0.5"/>
+				</NormalTexture>
+				<PushedTexture file="Interface\Addons\ItemRack_Plus\Textures\Button">
+					<TexCoords left="0" right="1" top="0.5" bottom="1"/>
+				</PushedTexture>
+				<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+			</Button>
+		</Frames>
+	</Frame>
+</Ui>
